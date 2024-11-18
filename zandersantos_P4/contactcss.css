@@ -1,0 +1,165 @@
+/********w*************
+    
+Project 4
+    Name: Zander Santos
+    Date: April. 18, 2024
+    Description: Contact Page Styling.
+    
+**********************/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+    
+
+}
+html{
+    background-image: url('https://wallpaperaccess.com/full/8201170.jpg');
+    background-repeat: no-repeat;
+}
+html, body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.headernav h1, .headernav a, .footerlinks a, .mainsection h1, .contactinfo,.mainsectiontitle{
+    color:black;   
+    font-family: "Jersey 15", sans-serif;
+
+}
+
+.headernav{
+    display:flex;    
+    justify-content: space-around;
+    align-items:center;
+    background-color: rgba(255,255,255,0.7);
+
+    padding: 30px 30px 20px 30px;
+
+}
+.headernav h1{
+    display: flex;
+    font-size:28px;
+    font-weight: lighter;
+    margin: 0;
+
+}
+.headernav ul{
+    display: flex;
+    font-size: 18px;
+
+
+}
+.headernav li{
+    list-style: none;
+    padding:10px;
+    margin: 0.1em;
+
+
+
+}
+.headernav a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 10px;
+ 
+    
+}
+article{
+
+    
+    text-align: center;
+    font-weight:lighter;
+    margin-top: 20px;
+}
+.mainsectiontitle{
+    
+    font-size: 40px;  
+
+}
+.contactinfo{
+    margin-top:10px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.contactinfo li{
+    display:flex;
+    align-items: start;
+    list-style: none;
+    font-size: 35px;
+    padding:30px 40px 15px 30px;
+    background-color: rgba(255,255,255,0.7);
+
+}
+
+input[type='text'] {
+	margin-top:8px;
+    margin-left:10px;
+}
+.submitbutton, .resetbutton{
+    display:flex;
+    
+    margin-bottom: 400px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;    
+    font-family: "Jersey 15", sans-serif;
+    color:white;
+    font-size: 30px;
+    background-color: #000000;
+    font-weight:light;
+ 
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    background-color: rgba(255,255,255,0.7);
+
+    
+}
+.footerlinks{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    padding: 5px;
+}
+.footerlinks ul{
+    display:flex;
+    
+}
+.footerlinks li{
+    list-style: none;
+    padding:10px 10px 0px 10px;
+
+}
+.footerlinks a{
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.error{
+    display:none;
+}
+
+@media(min-width:320px){
+    @media(max-width:100%)
+    {
+        .headernav,.mainsectionheaders,.mainsectionhome,.contactbutton,.contactinfo
+        {
+            display:flex;
+            align-items: stretch;
+            max-width:100%;
+            max-height:100%
+        }
+        
+    }   
+}

@@ -1,0 +1,90 @@
+<!--------w------------
+
+    Project 4
+    Name: Zander Santos
+    Date: April. 18, 2024
+    Description: Contact Page
+    
+    References used:
+    https://wallpaperaccess.com/full/8201170.jpg
+---------------------->
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Zander Santos Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="contactcss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <script src = "contactp4.js"></script>
+</head>
+<header>
+    <nav class = "headernav">
+            <h1>Zander Santos</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>  
+    </nav>
+</header>
+<body>
+    <article>
+        <div class = "mainsectiontitle">
+            <h1>Contact</h1>
+        </div>
+        <div class = "contactinfo">
+            
+            <ul>
+                <li>
+                    <label for="fullname" >Full Name</label>
+                    <input  id="fullname" name="fullname" type="text"/>
+                    <p class="contactError error" id="fullname_error">* Required field</p>
+                </li>
+                <li>
+                    <label for="phone">Phone Number</label>
+                    <input  id="phone" name="phone" type="text" />
+                    <p class="contactError error" id="phone_error">* Required field</p>
+                    <p class="contactError error" id="phone_error2">* Invalid Phone Number</p>
+
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input  id="email" name="email" type="text"/>
+                    <p class="contactError error" id="email_error">* Required field</p>
+                    <p class="contactError error" id="email_error2">* Invalid Email</p>
+
+                </li>
+                <li>
+                    <label for="comment">Comments</label>
+                    <textarea id="comment" name="comment" rows="6" cols="50"></textarea>
+                    
+                </li>
+ 
+            </ul>
+            <button type="submit" class="submitbutton">Submit</button>
+            <button type="reset" class="resetbutton">Reset</button>
+
+        </div>
+
+    </article>
+</body>
+<footer>
+    <div class="footerlinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Inquiries</a></li>
+            
+        </ul>
+    </div>    
+</footer>
+</html>

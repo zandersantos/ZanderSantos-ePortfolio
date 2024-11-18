@@ -1,0 +1,249 @@
+/********w*************
+    
+Project 4
+    Name: Zander Santos
+    Date: April. 18, 2024
+    Description: Home Page Styling.
+    
+**********************/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+
+}
+
+
+.background{
+    position:fixed;
+    top:50%;
+    left:50%;
+    right:50%;
+    bottom:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.background img{
+    
+    top:0;
+    left:0;
+    transition: width 1s, height 1s;
+    width:500px;
+    height:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    
+}
+.clicktext{
+    position:absolute;
+
+    display:flex;
+
+
+    z-index: 1;
+    color:white;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.background:hover img{
+    width:550px;
+    height:550px;
+
+
+}
+.background:click img{
+    width:550px;
+    height:550px;
+
+}
+
+.headernav{
+    display:flex;    
+    justify-content: space-around;
+    align-items:center;
+
+    padding: 30px 30px 20px 30px;
+
+}
+.headernav h1{
+    display: flex;
+    font-size:28px;
+    font-weight: lighter;
+    margin: 0;
+
+}
+.headernav ul{
+    display: flex;
+    font-size: 18px;
+
+
+}
+.headernav li{
+    list-style: none;
+    padding:10px;
+    margin: 0.1em;
+
+
+
+}
+.headernav a{
+    list-style: none;
+    text-decoration: none;
+    font-size:28px;
+    padding: 10px;
+ 
+    
+}
+.mainsectionhome{
+    padding: 10em 0em 10em 0em;
+    display: flex;
+    
+    
+    justify-content: space-between;
+   
+}
+.mainsectionheaders{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+
+    
+}
+.mainsectionhome h1{
+    
+    font-size: 40px;
+    font-weight: 100;
+}
+.mainsectionhome h2{
+    
+    font-size: 70px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+.mainsectionhome h3{
+    font-size: 30px;
+    font-style: normal;
+    width:15em;
+    font-weight: bold;
+}
+.mainsectionhome h4{
+    font-size: 28px;
+    font-weight:lighter;
+    width:10em;
+}
+
+
+.mainsectionhome img{
+    display: none;
+    border: 15px solid;
+    border-radius: 50%;
+    border-color: black;
+    width:350px;
+    height:350px;
+    margin-top: -100px;
+    margin-right:10px;
+
+  
+    
+}
+
+.contactbutton{
+    display:none;
+    margin-top:50px;
+    margin-left:50px;
+
+    padding: 10px 10px 10px 10px;
+    width: 200px;
+    border-radius: 20px;    
+    font-family: "Jersey 15", sans-serif;
+    color:white;
+    font-size: 30px;
+    background-color: #000000;
+    font-weight:light;
+    
+
+}
+.headernav a,.headernav h1,.footerlinks a,.mainsectionheaders h1, .mainsectionheaders h2, .mainsectionheaders h3, .mainsectionheaders h4{
+    color:black;
+    
+    font-family: "Jersey 15", sans-serif;
+    
+    
+}
+
+
+
+
+
+
+
+
+footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+  
+    
+}
+.footerlinks{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 5px;
+}
+.footerlinks ul{
+    display:flex;
+    
+}
+.footerlinks li{
+    list-style: none;
+    padding:10px 10px 0px 10px;
+
+}
+.footerlinks a{
+    text-decoration: none;
+
+    font-size: 20px;
+}
+
+@media only screen and (max-width:768px){
+    .headernav,.mainsectionheaders,.mainsectionhome,.clicktext,.contactbutton, .background
+    {
+        display:flex;
+        align-items: stretch;
+        max-width:100%;
+        max-height:100%
+    }
+    .background img,.clicktext{
+        width:50%;
+        height:auto;
+    }
+
+}  
+@media only screen and(max-width:768px)
+{
+    .mainsectionhome,
+    .mainsectionheaders,
+    .contactbutton,
+    .background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .background img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
